@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Daily Do</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="newtask">New task</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="addtask">Add</string>
+    <string name="addnewtask">add new task...</string>
+    <string name="delete">delete</string>
+</resources>

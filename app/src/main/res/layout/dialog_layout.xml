@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    android:id="@+id/card"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="@android:color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/titleText"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/newtask"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:minWidth="180dp"
+            android:hint="@string/addnewtask"
+            android:textAllCaps="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_margin="18dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_alignParentBottom="true"
+            >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/done"
+            android:textSize="12sp"
+            android:text="@string/addtask"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"/>
+            <View android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancel"
+                android:textSize="12sp"
+                android:text="@string/cancel"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"/>
+        </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
