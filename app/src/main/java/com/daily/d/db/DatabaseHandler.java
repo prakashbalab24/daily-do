@@ -1,4 +1,4 @@
-package com.daily.d;
+package com.daily.d.db;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,6 +8,9 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import com.daily.d.helper.utils.Helper;
+import com.daily.d.tasks.Tasks;
 
 public class DatabaseHandler extends SQLiteOpenHelper {
 
@@ -54,7 +57,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 	 */
 
 	// Adding new contact
-	void addTasks(Tasks tasks) {
+	public void addTasks(Tasks tasks) {
 		SQLiteDatabase db = this.getWritableDatabase();
 
 		ContentValues values = new ContentValues();

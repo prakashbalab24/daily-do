@@ -1,30 +1,27 @@
 package com.daily.d;
 
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.CheckedTextView;
 
-import java.util.ArrayList;
+import com.daily.d.db.DatabaseHandler;
+import com.daily.d.helper.utils.Helper;
+import com.daily.d.tasks.Tasks;
+import com.daily.d.tasks.TasksAdapter;
+
 import java.util.List;
 
 public class Main2Activity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private List<Tasks> tasksList;
     private TasksAdapter tasksAdapter;
-    private  DatabaseHandler db;
+    private DatabaseHandler db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

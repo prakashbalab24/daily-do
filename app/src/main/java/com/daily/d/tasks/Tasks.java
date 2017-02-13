@@ -1,4 +1,4 @@
-package com.daily.d;
+package com.daily.d.tasks;
 
 /**
  * Created by prakash-bala on 9/2/17.

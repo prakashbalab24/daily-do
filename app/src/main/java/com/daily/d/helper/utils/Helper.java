@@ -1,9 +1,7 @@
-package com.daily.d;
+package com.daily.d.helper.utils;
 
 import android.app.Activity;
 import android.app.Dialog;
-import android.content.Context;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -11,8 +9,12 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import com.daily.d.R;
+import com.daily.d.tasks.Tasks;
+import com.daily.d.tasks.TasksAdapter;
+import com.daily.d.db.DatabaseHandler;
 
 import java.util.List;
 
