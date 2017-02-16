@@ -36,8 +36,8 @@ public class Main2Activity extends AppCompatActivity {
                 {
 //                    db.deleteTable();
                     new AlertDialog.Builder(Main2Activity.this)
-                            .setTitle("Delete Tasks")
-                            .setMessage("Are you sure you want to delete all tasks?")
+                            .setTitle(R.string.delete_task)
+                            .setMessage(R.string.delete_task_desc)
                             .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     // continue with delete
@@ -62,8 +62,6 @@ public class Main2Activity extends AppCompatActivity {
         db = new DatabaseHandler(this);
         new Helper(tasksList,db,tasksAdapter,recyclerView,this);
 
-//        db.addContact(new Tasks(1,"balaji"));
-//        db.addContact(new Tasks(2,"manikandan"));
 
         Helper.fetchIntoView();
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);

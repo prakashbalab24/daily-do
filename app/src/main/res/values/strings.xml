@@ -7,4 +7,6 @@
     <string name="addtask">Add</string>
     <string name="addnewtask">add new task...</string>
     <string name="delete">delete</string>
+    <string name="delete_task">Delete Tasks</string>
+    <string name="delete_task_desc">Are you sure you want to delete all tasks?</string>
 </resources>
