@@ -17,16 +17,16 @@ import com.daily.d.tasks.TasksAdapter;
 
 import java.util.List;
 
-public class Main2Activity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
-    private List<Tasks> tasksList;
-    private TasksAdapter tasksAdapter;
+    private List<Tasks> tasksList=null;
+    private TasksAdapter tasksAdapter=null;
     private DatabaseHandler db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_main);
         final Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         toolbar.inflateMenu(R.menu.toolbar_menu);
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
@@ -35,7 +35,7 @@ public class Main2Activity extends AppCompatActivity {
                 if(item.getItemId()==R.id.deleteall)
                 {
 //                    db.deleteTable();
-                    new AlertDialog.Builder(Main2Activity.this)
+                    new AlertDialog.Builder(MainActivity.this)
                             .setTitle(R.string.delete_task)
                             .setMessage(R.string.delete_task_desc)
                             .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
